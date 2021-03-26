@@ -1,0 +1,19 @@
+{
+  "articles": [
+    {
+      "path": "index.html",
+      "title": "DACSS 601 Foundations of Data Science (Spring 2021)",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-03-25T23:53:09-04:00"
+    },
+    {
+      "path": "students.html",
+      "title": "Students",
+      "author": [],
+      "contents": "\nJohn Smith\n\n\n\n",
+      "last_modified": "2021-03-25T23:53:10-04:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "path": "posts/2021-03-25-student-first-post/",
+    "title": "Student first post",
+    "description": "Here is a plot I made with mtcars.",
+    "author": [
+      {
+        "name": "John Smith",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-03-25",
+    "categories": [
+      "scatterplot"
+    ],
+    "contents": "\nViola!\n\n\n\n\n\n\n",
+    "preview": "posts/2021-03-25-student-first-post/student-first-post_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2021-03-25T23:45:30-04:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to DACCS 601",
+    "description": "Welcome to our new blog, DACCS 601. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-03-25",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-03-25T13:40:40-04:00",
+    "input_file": {}
+  }
+]

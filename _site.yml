@@ -1,0 +1,10 @@
+name: "DACCS 601"
+title: "DACSS 601"
+description: |
+  This is the course website for student work from DACSS 601 offered at UMass Amherst.
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Students"
+      href: students.html
+output: distill::distill_article
