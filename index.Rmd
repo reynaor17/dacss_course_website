@@ -1,6 +1,5 @@
 ---
-title: "DACSS 601 Foundations of Data Science (Spring 2021)"
-image: "images/DACCS_Round_Network.png"
+title: "DACSS 601: Foundations of Data Science (Spring 2021)"
 site: distill::distill_website
 listing: posts
 ---
