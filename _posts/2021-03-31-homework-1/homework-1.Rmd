@@ -6,6 +6,10 @@ author:
   - name: Alex Hong
     url: https://example.com/norajones
 date: 03-31-2021
+categories:
+  - homework 2
+  - congress
+  - alex hong
 output:
   distill::distill_article:
     self_contained: false
