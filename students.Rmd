@@ -5,3 +5,4 @@ site: distill::distill_website
 
 - John Smith
 - Alex Hong
+- [Max](Max.html)
