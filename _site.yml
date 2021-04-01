@@ -4,15 +4,21 @@ theme: theme.css
 description: |
   This is the course website for student work from DACSS 601 offered at UMass Amherst.
 output_dir: "docs"
+base_url: https://github.com/DACSS/dacss_course_website
+collections:
+  posts:
+    share: [twitter, linkedin]
 creative_commons: CC BY-NC
 twitter:
   site: "@UMassDACSS"
   creator: "@UMassDACSS"
 navbar:
   logo:
-    image: images/Data Analytics_vert_cmyk.png
-    href: https://dacss.github.io/daccs_course_website/
+    image: images/DACSS_Round_Network.png
+    href: https://dacss.github.io/dacss_course_website/
   right:
+    - text: "About the Course"
+      href: about.html
     - text: "Students"
       href: students.html
   search: false

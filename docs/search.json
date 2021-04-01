@@ -1,26 +1,32 @@
 {
   "articles": [
     {
+      "path": "about.html",
+      "title": "About this course",
+      "author": [],
+      "contents": "\nThis is some information about DACSS and the course. Can be prefilled in with something interesting.\nCourse Instructor:\nMeredith Rolfe\n\n\n\n",
+      "last_modified": "2021-03-31T23:43:12-04:00"
+    },
+    {
       "path": "index.html",
-      "title": "DACSS 601: Foundations of Data Science (Spring 2021)",
+      "title": "DACSS 601: Foundations of Data Science  \nSpring 2021",
       "author": [],
       "contents": "\n\n\n\n",
-<<<<<<< HEAD
-      "last_modified": "2021-03-31T21:11:47-04:00"
-=======
-      "last_modified": "2021-03-31T20:54:01-04:00"
->>>>>>> 9b8917ce91b3f73d392205bee2d321b226ef813d
+      "last_modified": "2021-03-31T23:43:12-04:00"
+    },
+    {
+      "path": "Rolfe.html",
+      "title": "Meredith Rolfe",
+      "author": [],
+      "contents": "\n\n          \n          \n          \n          \n          DACCS 601\n          \n          \n          About the Course\n          Students\n          ☰\n          \n          \n      \n        \n          \n            Meredith Rolfe\n          \n          \n            \n              I am some sort of person, blah blah biography.\n            \n            \n              I am some sort of person, blah blah biography.\n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      Twitter\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    Twitter\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    \n          \n          \n          \n\n    \n  ",
+      "last_modified": "2021-03-31T23:43:13-04:00"
     },
     {
       "path": "students.html",
       "title": "Students",
       "author": [],
       "contents": "\nJohn Smith\nAlex Hong\n\n\n\n",
-<<<<<<< HEAD
-      "last_modified": "2021-03-31T21:11:48-04:00"
-=======
-      "last_modified": "2021-03-31T20:54:02-04:00"
->>>>>>> 9b8917ce91b3f73d392205bee2d321b226ef813d
+      "last_modified": "2021-03-31T23:43:13-04:00"
     }
   ],
   "collections": ["posts/posts.json"]
