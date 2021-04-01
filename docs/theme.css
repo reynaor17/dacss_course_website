@@ -71,6 +71,8 @@ d-appendix {
   --text-size:        15px;
   --hover-color:      white;
   --bkgd-color:       #881c1c;
+  clear: both;
+  position: relative;
 }
 
 /*-- Additional custom styles --*/
