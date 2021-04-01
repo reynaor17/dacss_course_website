@@ -1,5 +1,7 @@
 ---
-title: "DACSS 601: Foundations of Data Science  \nSpring 2021"
+title: |
+  DACSS 601: Foundations of Data Science Spring 2021
+  
 site: distill::distill_website
 listing: posts
 ---
