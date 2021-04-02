@@ -136,3 +136,8 @@ d-appendix {
 d-article h2 {
   font-variant: small-caps;
 }
+
+/* Footer social media icons */
+.footer i {
+  margin-right: 5px;
+}

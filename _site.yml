@@ -17,9 +17,19 @@ navbar:
     image: images/white-dacss-wordmark.png
     href: https://dacss.github.io/dacss_course_website/
   right:
-    - text: "About the Course"
+    - text: "About"
       href: about.html
     - text: "Students"
       href: students.html
+    - icon: fab fa-github-alt fa-1x
+      href: https://github.com/dacss/dacss_course_website
+    - icon: fab fa-twitter fa-1x
+      href: https://twitter.com/UMassDACSS
+    - icon: fab fa-facebook fa-1x
+      href: https://www.facebook.com/UMassDACSS/?hc_ref=ARTD_zQ7HWSN2lLvmMqZ6QXNRNuyxP1Xk8PBv5HNZLL6_iiXw_ppEcVDvHLbs-VlD7c&fref=nf&__tn__=kC-R
+    - icon: fab fa-linkedin fa-1x
+      href: https://www.linkedin.com/company/umass-amherst-data-analytics-and-computational-social-science
+    - icon: fab fa-instagram fa-1x
+      href: https://www.instagram.com/umassdacss/?hl=en
   search: false
 output: distill::distill_article
