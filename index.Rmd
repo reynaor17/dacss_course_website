@@ -1,7 +1,59 @@
 ---
-title: |
-  DACSS 601: Foundations of Data Science Spring 2021
-  
+title: "Foundations of Data Science  |  Spring 2021"
 site: distill::distill_website
 listing: posts
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(quanteda)
+library(readtext)
+```
+
+
+<div style="padding:1.5em">
+<p>
+</p>
+</div>
+
+```{r title-page-plot, layout="l-page", eval=T, fig.width=15, fig.asp=.25}
+
+proposal<-readtext("~/Google Drive/Data Analytics program/Marketing and Student Communication/Dacss proposal.txt")
+doc.corpus<-corpus(proposal)
+doc.corpus<-corpus_reshape(doc.corpus,to="sentences")
+
+doc.tokens <- tokens(doc.corpus, remove_punct = TRUE, 
+                     remove_numbers = TRUE, remove_symbols = TRUE)
+doc.tokens <-tokens_remove(doc.tokens, c("s", stopwords("english")))
+
+doc.dfm <- dfm(doc.tokens)
+
+# lemmatization
+economic.words <-grep("econom", featnames(doc.dfm), value=TRUE)
+doc.tokens <- tokens_replace(doc.tokens,
+                c("sciences", "programs", "ph.d", "analysis", 
+                  "economic", "professor", "teaching", "taught",
+                  "support", "undergraduate", "graduates", "political",
+                  economic.words), 
+                c("science", "program", "PhD", "analytics", 
+                  "economics", "faculty", "faculty", "faculty",
+                  "student", "student", "graduate", "politics",
+                  rep("economics", length(economic.words))),
+                valuetype = "fixed")
+dacss.terms <-c("data", "science", "social", "analysis","research",
+                "methods", "umass", "dacss", "graduate", "advanced",
+                "statistics", "politics", "economics", "computational",
+                "faculty", "students", "analytics")
+
+doc.dfm <- dfm(doc.tokens, select=dacss.terms)
+doc.fcm <- fcm(doc.dfm, count="boolean")
+
+textplot_network(doc.fcm,edge_color = "#881c1c",
+                 vertex_labelcolor = "#63666a", 
+                 vertex_labelsize = 8, vertex_size = 5, offset=0,
+                 vertex_color = "white", min_freq = .7)
+```
+
+
+
