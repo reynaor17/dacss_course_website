@@ -476,7 +476,6 @@
             --fig-cap-color:   rgba(0, 0, 0, 0.6);
             /*-- Specify custom fonts ~~~ must be imported above   --*/
             --title-font:    'Open Sans', sans-serif;
-            --title-font-variant: small-caps;
             --heading-font:    'Open Sans', sans-serif;
             --mono-font:       'Open Sans', sans-serif;
             --body-font:       'Open Sans', sans-serif;
@@ -545,10 +544,19 @@
             font-family: 'Open Sans', sans-serif !important; 
           }
 
+          /* This is an attempt to change sidebar, doesn't work */
           .sidebar {
             width: 5%;
           }
 
+          d-article h1{
+            font-variant: small-caps;
+            text-align:right;
+            margin-top: 0em;
+            margin-bottom: 2em;
+            font-weight: 200;
+            font-size 75px;
+          }
           =======
           /* Size of user images */
           .rounded-circle {
@@ -724,7 +732,7 @@
           <a href="index.html" class="title">DACCS 601</a>
           </div>
           <div class="nav-right">
-          <a href="about.html">About the Course</a>
+          <a href="about.html">About</a>
           <a href="students.html">Students</a>
           <a href="https://github.com/dacss/dacss_course_website">
           <i class="fab fa-github-alt fa-1x" aria-hidden="true"></i>
