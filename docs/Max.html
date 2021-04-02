@@ -507,11 +507,12 @@
           /* These properties only apply to Distill sites and blogs  */
 
           .distill-site-header {
-            --title-size:       28px;
+            --title-size:       22px;
             --text-color:       rgba(255, 255, 255, 1);
             --text-size:        18px;
             --hover-color:      white;
             --bkgd-color:       #881c1c;
+            line-height: 1.15 !important;
           }
 
           .distill-site-footer {
@@ -519,8 +520,6 @@
             --text-size:        15px;
             --hover-color:      white;
             --bkgd-color:       #881c1c;
-            clear: both;
-            position: relative;
           }
 
           /*-- Additional custom styles --*/
@@ -528,7 +527,7 @@
 
           /* Logo sizing */
           .logo img {
-            display: none;
+            vertical-align: 0% !important;
             max-height: 40px !important; 
             width: 40px !important;
             margin-bottom: -10px !important;
@@ -542,7 +541,13 @@
           /* Navbar right links */
           .nav-right a {
             font-family: 'Open Sans', sans-serif !important; 
-          }</style>
+          }
+
+          /* Size of user images */
+          .rounded-circle {
+            width: 10rem;
+          }
+          </style>
           <style type="text/css">
           /* base style */
 
@@ -697,7 +702,7 @@
           .distill-site-footer a:hover {
             color: var(--hover-color, white);
           }</style>
-          <script src="/Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmd/h/pandoc/header-attrs.js"></script>
+          <script src="/Library/Frameworks/R.framework/Versions/3.6/Resources/library/rmarkdown/rmd/h/pandoc/header-attrs.js"></script>
     
     
   </head>
@@ -733,11 +738,17 @@
           <div class="row justify-content-center align-items-center">
             <div class="col-6 mt-3 text-center d-none d-sm-block">
               <p>I am a Doggie Teaching Assistant. I like hanging out and getting pets while you work on R. I work hard to maintain extreme fluffiness.</p>
-              <p>#Hobbies: Playing ball. Rolling in the grass. Long walks.</p>
+              <div id="hobbies" class="section level2">
+              <h2>Hobbies:</h2>
+              <p>Playing ball. Rolling in the grass. Long walks.</p>
+              </div>
             </div>
             <div class="col-11 mt-3 text-center d-block d-sm-none">
               <p>I am a Doggie Teaching Assistant. I like hanging out and getting pets while you work on R. I work hard to maintain extreme fluffiness.</p>
-              <p>#Hobbies: Playing ball. Rolling in the grass. Long walks.</p>
+              <div id="hobbies" class="section level2">
+              <h2>Hobbies:</h2>
+              <p>Playing ball. Rolling in the grass. Long walks.</p>
+              </div>
             </div>
           </div>
 
