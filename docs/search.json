@@ -5,80 +5,35 @@
       "title": "About this course",
       "author": [],
       "contents": "\nThis is some information about DACSS and the course. Can be prefilled in with something interesting.\nCourse Instructor:\nMeredith Rolfe\n\n\n\n",
-<<<<<<< HEAD
-      "last_modified": "2021-04-01T23:08:32-04:00"
+      "last_modified": "2021-04-02T15:47:32-04:00"
     },
     {
       "path": "index.html",
-      "title": "Foundations of Data Science Spring 2021",
+      "title": "",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-04-01T23:08:32-04:00"
-=======
-<<<<<<< HEAD
-      "last_modified": "2021-04-02T12:31:02-04:00"
-=======
-      "last_modified": "2021-04-02T12:16:14-04:00"
->>>>>>> 2120dc6a18702f94a781a7eb2ac4a1e7c3c7d6fd
-    },
-    {
-      "path": "index.html",
-      "title": "Foundations of Data Science  |  Spring 2021",
-      "author": [],
-      "contents": "\n\n\n\n\n\n\n\n\n\n\n",
-<<<<<<< HEAD
-      "last_modified": "2021-04-02T12:31:07-04:00"
-=======
-      "last_modified": "2021-04-02T12:16:19-04:00"
->>>>>>> 2120dc6a18702f94a781a7eb2ac4a1e7c3c7d6fd
->>>>>>> a3d850b7e7f6b04f7cac2108cc8db068ce2b2e6b
+      "contents": "\nFoundations of Data Science | Spring 2021\n\n\n\n\n\n\n",
+      "last_modified": "2021-04-02T15:47:38-04:00"
     },
     {
       "path": "Max.html",
       "title": "Max",
       "author": [],
-<<<<<<< HEAD
-      "contents": "\n\n          \n          \n          \n          \n          DACCS 601\n          \n          \n          About the Course\n          Students\n          ☰\n          \n          \n      \n        \n          \n            Max\n          \n          \n            \n              I am a Doggie Teaching Assistant. I like hanging out and getting pets while you work on R. I work hard to maintain extreme fluffiness.\n              \n              Hobbies:\n              Playing ball. Rolling in the grass. Long walks.\n              \n            \n            \n              I am a Doggie Teaching Assistant. I like hanging out and getting pets while you work on R. I work hard to maintain extreme fluffiness.\n              \n              Hobbies:\n              Playing ball. Rolling in the grass. Long walks.\n              \n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      Twitter\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    Twitter\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    \n          \n          \n          \n\n    \n  ",
-      "last_modified": "2021-04-01T23:08:33-04:00"
-=======
       "contents": "\n\n          \n          \n          \n          \n          DACCS 601\n          \n          \n          About\n          Students\n          \n          \n          \n          ☰\n          \n          \n      \n        \n          \n            Max\n          \n          \n            \n              I am a Doggie Teaching Assistant. I like hanging out and getting pets while you work on R. I work hard to maintain extreme fluffiness.\n              \n              Hobbies:\n              Playing ball. Rolling in the grass. Long walks.\n              \n            \n            \n              I am a Doggie Teaching Assistant. I like hanging out and getting pets while you work on R. I work hard to maintain extreme fluffiness.\n              \n              Hobbies:\n              Playing ball. Rolling in the grass. Long walks.\n              \n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      Twitter\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    Twitter\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    \n          \n          \n          \n\n    \n  ",
-<<<<<<< HEAD
-      "last_modified": "2021-04-02T12:31:07-04:00"
-=======
-      "last_modified": "2021-04-02T12:16:19-04:00"
->>>>>>> 2120dc6a18702f94a781a7eb2ac4a1e7c3c7d6fd
->>>>>>> a3d850b7e7f6b04f7cac2108cc8db068ce2b2e6b
+      "last_modified": "2021-04-02T15:47:38-04:00"
     },
     {
       "path": "Rolfe.html",
       "title": "Meredith Rolfe",
       "author": [],
-<<<<<<< HEAD
-      "contents": "\n\n          \n          \n          \n          \n          DACCS 601\n          \n          \n          About the Course\n          Students\n          ☰\n          \n          \n      \n        \n          \n            Meredith Rolfe\n          \n          \n            \n              I am some sort of person, blah blah biography.\n            \n            \n              I am some sort of person, blah blah biography.\n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      Twitter\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    Twitter\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    \n          \n          \n          \n\n    \n  ",
-      "last_modified": "2021-04-01T23:08:33-04:00"
-=======
       "contents": "\n\n          \n          \n          \n          \n          DACCS 601\n          \n          \n          About\n          Students\n          \n          \n          \n          ☰\n          \n          \n      \n        \n          \n            Meredith Rolfe\n          \n          \n            \n              I am some sort of person, blah blah biography.\n            \n            \n              I am some sort of person, blah blah biography.\n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      Twitter\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    Twitter\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    \n          \n          \n          \n\n    \n  ",
-<<<<<<< HEAD
-      "last_modified": "2021-04-02T12:31:07-04:00"
-=======
-      "last_modified": "2021-04-02T12:16:19-04:00"
->>>>>>> 2120dc6a18702f94a781a7eb2ac4a1e7c3c7d6fd
->>>>>>> a3d850b7e7f6b04f7cac2108cc8db068ce2b2e6b
+      "last_modified": "2021-04-02T15:47:39-04:00"
     },
     {
       "path": "students.html",
       "title": "Students",
       "author": [],
       "contents": "\nJohn Smith\nAlex Hong\nMax\n\n\n\n",
-<<<<<<< HEAD
-      "last_modified": "2021-04-01T23:08:34-04:00"
-=======
-<<<<<<< HEAD
-      "last_modified": "2021-04-02T12:31:08-04:00"
-=======
-      "last_modified": "2021-04-02T12:16:20-04:00"
->>>>>>> 2120dc6a18702f94a781a7eb2ac4a1e7c3c7d6fd
->>>>>>> a3d850b7e7f6b04f7cac2108cc8db068ce2b2e6b
+      "last_modified": "2021-04-02T15:47:39-04:00"
     }
   ],
   "collections": ["posts/posts.json"]

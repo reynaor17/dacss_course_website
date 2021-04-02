@@ -1,5 +1,5 @@
 ---
-title: "Foundations of Data Science  |  Spring 2021"
+title: ""
 site: distill::distill_website
 listing: posts
 ---
@@ -9,17 +9,16 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(quanteda)
 library(readtext)
+#download UMass fonts from google then import to use in R
 ```
 
-
-<div style="padding:.5em">
-<p>
-</p>
+<div class="index-title">
+# Foundations of Data Science | Spring 2021
 </div>
 
-```{r title-page-plot, layout="l-screen-inset", eval=T, fig.width=15, fig.asp=.25}
+```{r title-page-plot, layout="l-screen-inset", eval=T, fig.width=20, fig.asp=.25}
 
-proposal<-readtext("~/Google Drive/Data Analytics program/Marketing and Student Communication/Dacss proposal.txt")
+proposal<-readtext("Dacss proposal.txt")
 doc.corpus<-corpus(proposal)
 doc.corpus<-corpus_reshape(doc.corpus,to="sentences")
 
@@ -51,7 +50,8 @@ doc.fcm <- fcm(doc.dfm, count="boolean")
 
 textplot_network(doc.fcm,edge_color = "#881c1c",
                  vertex_labelcolor = "#63666a", 
-                 vertex_labelsize = 8, vertex_size = 5, offset=0,
+                 vertex_labelfont = "Open Sans",
+                 vertex_labelsize = 7, vertex_size = 5, offset=0,
                  vertex_color = "white", min_freq = .7)
 ```
 

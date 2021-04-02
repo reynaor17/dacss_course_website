@@ -1901,7 +1901,7 @@ html {
   --aside-color:     rgba(0, 0, 0, 0.6);
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
-  --title-font:    'Open Sans', sans-serif;
+  --title-font:      'Open Sans', sans-serif;
   --heading-font:    'Open Sans', sans-serif;
   --mono-font:       'Open Sans', sans-serif;
   --body-font:       'Open Sans', sans-serif;
@@ -1920,6 +1920,14 @@ d-byline {
 .d-contents {
   --heading-size:    18px;
   --contents-size:   13px;
+}
+
+.posts-with-sidebar .posts-list {
+      width: 80%;
+}
+
+.posts-with-sidebar .posts-sidebar {
+      width: 15%;
 }
 
 /*-- ARTICLE APPENDIX --*/
@@ -1975,18 +1983,25 @@ d-appendix {
   width: 5%;
 }
 
-d-article h1{
+/* Index page title */
+.index-title h1{
   font-variant: small-caps;
-  text-align:right;
-  margin-top: 0em;
-  margin-bottom: 2em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-weight: 200;
-  font-size 75px;
+  font-size: 2.2em;
+  color: #881c1c;
 }
-=======
+
 /* Size of user images */
 .rounded-circle {
   width: 10rem;
+}
+
+/* Post titles */
+d-article h2 {
+  font-variant: small-caps;
 }</style>
 <style type="text/css">
 /* base style */
