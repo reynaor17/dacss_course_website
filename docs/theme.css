@@ -27,7 +27,7 @@ html {
   --aside-color:     rgba(0, 0, 0, 0.6);
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
-  --title-font:    'Open Sans', sans-serif;
+  --title-font:      'Open Sans', sans-serif;
   --heading-font:    'Open Sans', sans-serif;
   --mono-font:       'Open Sans', sans-serif;
   --body-font:       'Open Sans', sans-serif;
@@ -89,9 +89,10 @@ d-appendix {
 /* Logo sizing */
 .logo img {
   vertical-align: 0% !important;
-  max-height: 40px !important; 
+  max-height: 50px !important; 
+  /*
   width: 40px !important;
-  margin-bottom: -10px !important;
+  margin-bottom: -10px !important;*/
 }
 
 /* Categories / labels */
@@ -109,6 +110,7 @@ d-appendix {
   width: 5%;
 }
 
+<<<<<<< HEAD
 .index-title h1{
   font-variant: small-caps;
   text-align:center;
@@ -120,13 +122,43 @@ d-appendix {
 }
 
 =======
+=======
+/* Index page title (coursename) */
+.index-title h1{
+  font-variant: small-caps;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 2.2em;
+  color: #881c1c;
+}
+
+/* Index page subtitle (semester) */
+.index-title h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #881c1c;
+  font-weight: 200;
+}
+
+>>>>>>> d25032491a51963260e05f6be0cffbb2c5bffad2
 /* Size of user images */
 .rounded-circle {
   width: 10rem;
 }
 
+<<<<<<< HEAD
 d-article h2 {
   font-size:1em;
   font-variant: small-caps;
   font-weight: 200;
+=======
+/* Post titles */
+d-article h2 {
+  font-variant: small-caps;
+}
+
+/* Footer social media icons */
+.footer i {
+  margin-right: 5px;
+>>>>>>> d25032491a51963260e05f6be0cffbb2c5bffad2
 }

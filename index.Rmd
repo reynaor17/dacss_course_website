@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: " "
+=======
+title: ""
+>>>>>>> d25032491a51963260e05f6be0cffbb2c5bffad2
 site: distill::distill_website
 listing: posts
 ---
@@ -12,12 +16,19 @@ library(readtext)
 #download UMass fonts from google then import to use in R
 ```
 
+<<<<<<< HEAD
 
 <div class="index-title">
 # Foundations of Data Science | Spring 2021
+=======
+<!-- Title -->
+<div class="index-title">
+<h1> DACSS 601: Foundations of Data Science </h1>
+<h2> Spring 2021 </h2>
+>>>>>>> d25032491a51963260e05f6be0cffbb2c5bffad2
 </div>
 
-```{r title-page-plot, layout="l-screen-inset", eval=T, fig.width=15, fig.asp=.25}
+```{r title-page-plot, layout="l-screen-inset", eval=T, fig.width=20, fig.asp=.25}
 
 proposal<-readtext("Dacss proposal.txt")
 doc.corpus<-corpus(proposal)
