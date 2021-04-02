@@ -12,7 +12,7 @@ library(readtext)
 ```
 
 
-<div style="padding:1.5em">
+<div style="padding:.5em">
 <p>
 </p>
 </div>
