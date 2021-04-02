@@ -475,6 +475,7 @@
             --aside-color:     rgba(0, 0, 0, 0.6);
             --fig-cap-color:   rgba(0, 0, 0, 0.6);
             /*-- Specify custom fonts ~~~ must be imported above   --*/
+            --title-font:    'Open Sans', sans-serif;
             --heading-font:    'Open Sans', sans-serif;
             --mono-font:       'Open Sans', sans-serif;
             --body-font:       'Open Sans', sans-serif;
@@ -543,11 +544,24 @@
             font-family: 'Open Sans', sans-serif !important; 
           }
 
+          /* This is an attempt to change sidebar, doesn't work */
+          .sidebar {
+            width: 5%;
+          }
+
+          d-article h1{
+            font-variant: small-caps;
+            text-align:right;
+            margin-top: 0em;
+            margin-bottom: 2em;
+            font-weight: 200;
+            font-size 75px;
+          }
+          =======
           /* Size of user images */
           .rounded-circle {
             width: 10rem;
-          }
-          </style>
+          }</style>
           <style type="text/css">
           /* base style */
 
@@ -702,7 +716,7 @@
           .distill-site-footer a:hover {
             color: var(--hover-color, white);
           }</style>
-          <script src="/Library/Frameworks/R.framework/Versions/3.6/Resources/library/rmarkdown/rmd/h/pandoc/header-attrs.js"></script>
+          <script src="/Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmd/h/pandoc/header-attrs.js"></script>
     
     
   </head>
@@ -718,8 +732,11 @@
           <a href="index.html" class="title">DACCS 601</a>
           </div>
           <div class="nav-right">
-          <a href="about.html">About the Course</a>
+          <a href="about.html">About</a>
           <a href="students.html">Students</a>
+          <a href="https://github.com/dacss/dacss_course_website">
+          <i class="fab fa-github-alt fa-1x" aria-hidden="true"></i>
+          </a>
           <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
           </div>
           </nav>
@@ -738,15 +755,15 @@
           <div class="row justify-content-center align-items-center">
             <div class="col-6 mt-3 text-center d-none d-sm-block">
               <p>I am a Doggie Teaching Assistant. I like hanging out and getting pets while you work on R. I work hard to maintain extreme fluffiness.</p>
-              <div id="hobbies" class="section level2">
-              <h2>Hobbies:</h2>
+              <div id="hobbies" class="section level1">
+              <h1>Hobbies:</h1>
               <p>Playing ball. Rolling in the grass. Long walks.</p>
               </div>
             </div>
             <div class="col-11 mt-3 text-center d-block d-sm-none">
               <p>I am a Doggie Teaching Assistant. I like hanging out and getting pets while you work on R. I work hard to maintain extreme fluffiness.</p>
-              <div id="hobbies" class="section level2">
-              <h2>Hobbies:</h2>
+              <div id="hobbies" class="section level1">
+              <h1>Hobbies:</h1>
               <p>Playing ball. Rolling in the grass. Long walks.</p>
               </div>
             </div>

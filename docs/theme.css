@@ -27,6 +27,7 @@ html {
   --aside-color:     rgba(0, 0, 0, 0.6);
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --title-font:    'Open Sans', sans-serif;
   --heading-font:    'Open Sans', sans-serif;
   --mono-font:       'Open Sans', sans-serif;
   --body-font:       'Open Sans', sans-serif;
@@ -95,8 +96,21 @@ d-appendix {
   font-family: 'Open Sans', sans-serif !important; 
 }
 
+/* This is an attempt to change sidebar, doesn't work */
+.sidebar {
+  width: 5%;
+}
+
+d-article h1{
+  font-variant: small-caps;
+  text-align:right;
+  margin-top: 0em;
+  margin-bottom: 2em;
+  font-weight: 200;
+  font-size 75px;
+}
+=======
 /* Size of user images */
 .rounded-circle {
   width: 10rem;
 }
-
