@@ -537,9 +537,10 @@
           /* Logo sizing */
           .logo img {
             vertical-align: 0% !important;
-            max-height: 40px !important; 
+            max-height: 50px !important; 
+            /*
             width: 40px !important;
-            margin-bottom: -10px !important;
+            margin-bottom: -10px !important;*/
           }
 
           /* Categories / labels */
@@ -557,15 +558,21 @@
             width: 5%;
           }
 
-          /* Index page title */
+          /* Index page title (coursename) */
           .index-title h1{
             font-variant: small-caps;
             text-align: center;
             margin-top: 1em;
-            margin-bottom: 1em;
-            font-weight: 200;
             font-size: 2.2em;
             color: #881c1c;
+          }
+
+          /* Index page subtitle (semester) */
+          .index-title h2 {
+            text-align: center;
+            margin-bottom: 1em;
+            color: #881c1c;
+            font-weight: 200;
           }
 
           /* Size of user images */
@@ -742,16 +749,13 @@
           <nav class="distill-site-nav distill-site-header">
           <div class="nav-left">
           <a class="logo" href="https://dacss.github.io/dacss_course_website/">
-          <img src="images/DACSS_Round_Network.png" alt="Logo"/>
+          <img src="images/white-dacss-wordmark.png" alt="Logo"/>
           </a>
-          <a href="index.html" class="title">DACCS 601</a>
+          <a href="index.html" class="title"></a>
           </div>
           <div class="nav-right">
-          <a href="about.html">About</a>
+          <a href="about.html">About the Course</a>
           <a href="students.html">Students</a>
-          <a href="https://github.com/dacss/dacss_course_website">
-          <i class="fab fa-github-alt fa-1x" aria-hidden="true"></i>
-          </a>
           <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
           </div>
           </nav>
@@ -861,7 +865,7 @@
           <!--/radix_placeholder_site_after_body-->
           <!--radix_placeholder_navigation_after_body-->
           <div class="distill-site-nav distill-site-footer">
-          <p><a href="https://www.umass.edu/sbs/dacss"><img src="images/Data Analytics_horiz_RGB.png" alt="UMass Amherst DACSS" class="inline" width ="30%" style="background-color:white; padding: 10px;"/></a></p>
+          <p><a href="https://www.umass.edu/sbs/dacss"><img src="images/white-dacss-wordmark.png" alt="UMass Amherst DACSS" class="inline" width ="30%"/></a></p>
           </div>
           <!--/radix_placeholder_navigation_after_body-->
 

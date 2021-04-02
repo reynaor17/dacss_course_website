@@ -1,5 +1,5 @@
-name: "DACCS 601"
-title: "DACCS 601"
+name: "DACSS 601"
+title: ""
 theme: theme.css
 description: |
   This is the course website for student work from DACSS 601 offered at UMass Amherst.
@@ -14,14 +14,12 @@ twitter:
   creator: "@UMassDACSS"
 navbar:
   logo:
-    image: images/DACSS_Round_Network.png
+    image: images/white-dacss-wordmark.png
     href: https://dacss.github.io/dacss_course_website/
   right:
-    - text: "About"
+    - text: "About the Course"
       href: about.html
     - text: "Students"
       href: students.html
-    - icon: fab fa-github-alt fa-1x
-      href: https://github.com/dacss/dacss_course_website
   search: false
 output: distill::distill_article

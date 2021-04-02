@@ -86,7 +86,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>DACCS 601: Student first post</title>
+<title>: Student first post</title>
 
 <meta property="description" itemprop="description" content="Here is a plot I made with mtcars."/>
 
@@ -99,7 +99,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta name="article:author" content="John Smith"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="DACCS 601: Student first post"/>
+<meta property="og:title" content=": Student first post"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="Here is a plot I made with mtcars."/>
 <meta property="og:url" content="https://github.com/DACSS/dacss_course_website/posts/2021-03-25-student-first-post/"/>
@@ -107,11 +107,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="og:image:width" content="1248"/>
 <meta property="og:image:height" content="768"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:site_name" content="DACCS 601"/>
+<meta property="og:site_name" content=""/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:title" content="DACCS 601: Student first post"/>
+<meta property="twitter:title" content=": Student first post"/>
 <meta property="twitter:description" content="Here is a plot I made with mtcars."/>
 <meta property="twitter:url" content="https://github.com/DACSS/dacss_course_website/posts/2021-03-25-student-first-post/"/>
 <meta property="twitter:image" content="https://github.com/DACSS/dacss_course_website/posts/2021-03-25-student-first-post/student-first-post_files/figure-html5/unnamed-chunk-1-1.png"/>
@@ -121,7 +121,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="twitter:creator" content="@UMassDACSS"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="DACCS 601: Student first post"/>
+<meta name="citation_title" content=": Student first post"/>
 <meta name="citation_fulltext_html_url" content="https://github.com/DACSS/dacss_course_website/posts/2021-03-25-student-first-post/"/>
 <meta name="citation_fulltext_world_readable" content=""/>
 <meta name="citation_online_date" content="2021/03/25"/>
@@ -1969,9 +1969,10 @@ d-appendix {
 /* Logo sizing */
 .logo img {
   vertical-align: 0% !important;
-  max-height: 40px !important; 
+  max-height: 50px !important; 
+  /*
   width: 40px !important;
-  margin-bottom: -10px !important;
+  margin-bottom: -10px !important;*/
 }
 
 /* Categories / labels */
@@ -1989,15 +1990,21 @@ d-appendix {
   width: 5%;
 }
 
-/* Index page title */
+/* Index page title (coursename) */
 .index-title h1{
   font-variant: small-caps;
   text-align: center;
   margin-top: 1em;
-  margin-bottom: 1em;
-  font-weight: 200;
   font-size: 2.2em;
   color: #881c1c;
+}
+
+/* Index page subtitle (semester) */
+.index-title h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #881c1c;
+  font-weight: 200;
 }
 
 /* Size of user images */
@@ -2194,16 +2201,13 @@ d-appendix d-footnote-list a.footnote-backlink {
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a class="logo" href="https://dacss.github.io/dacss_course_website/">
-<img src="../../images/DACSS_Round_Network.png" alt="Logo"/>
+<img src="../../images/white-dacss-wordmark.png" alt="Logo"/>
 </a>
-<a href="../../index.html" class="title">DACCS 601</a>
+<a href="../../index.html" class="title"></a>
 </div>
 <div class="nav-right">
-<a href="../../about.html">About</a>
+<a href="../../about.html">About the Course</a>
 <a href="../../students.html">Students</a>
-<a href="https://github.com/dacss/dacss_course_website">
-<i class="fab fa-github-alt fa-1x" aria-hidden="true"></i>
-</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2263,11 +2267,11 @@ d-appendix d-footnote-list a.footnote-backlink {
   <p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
   <h3 id="citation">Citation</h3>
   <p>For attribution, please cite this work as</p>
-  <pre class="citation-appendix short">Smith (2021, March 25). DACCS 601: Student first post. Retrieved from https://github.com/DACSS/dacss_course_website/posts/2021-03-25-student-first-post/</pre>
+  <pre class="citation-appendix short">Smith (2021, March 25). : Student first post. Retrieved from https://github.com/DACSS/dacss_course_website/posts/2021-03-25-student-first-post/</pre>
   <p>BibTeX citation</p>
   <pre class="citation-appendix long">@misc{smith2021student,
   author = {Smith, John},
-  title = {DACCS 601: Student first post},
+  title = {: Student first post},
   url = {https://github.com/DACSS/dacss_course_website/posts/2021-03-25-student-first-post/},
   year = {2021}
 }</pre>
@@ -2277,7 +2281,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <div class="distill-site-nav distill-site-footer">
   <p>
     <a href="https://www.umass.edu/sbs/dacss">
-      <img src="../../images/Data Analytics_horiz_RGB.png" alt="UMass Amherst DACSS" class="inline" width="30%" style="background-color:white; padding: 10px;"/>
+      <img src="../../images/white-dacss-wordmark.png" alt="UMass Amherst DACSS" class="inline" width="30%"/>
     </a>
   </p>
 </div>
