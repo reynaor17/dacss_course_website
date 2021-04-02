@@ -86,21 +86,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>DACCS 601: Students</title>
+  <title>: Students</title>
 
 
   <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="DACCS 601: Students"/>
+  <meta property="og:title" content=": Students"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="DACCS 601"/>
+  <meta property="og:site_name" content=""/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="DACCS 601: Students"/>
+  <meta property="twitter:title" content=": Students"/>
   <meta property="twitter:site" content="@UMassDACSS"/>
   <meta property="twitter:creator" content="@UMassDACSS"/>
 
@@ -1880,7 +1880,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --aside-color:     rgba(0, 0, 0, 0.6);
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --title-font:    'Open Sans', sans-serif;
+    --title-font:      'Open Sans', sans-serif;
     --heading-font:    'Open Sans', sans-serif;
     --mono-font:       'Open Sans', sans-serif;
     --body-font:       'Open Sans', sans-serif;
@@ -1942,9 +1942,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Logo sizing */
   .logo img {
     vertical-align: 0% !important;
-    max-height: 40px !important; 
+    max-height: 50px !important; 
+    /*
     width: 40px !important;
-    margin-bottom: -10px !important;
+    margin-bottom: -10px !important;*/
   }
 
   /* Categories / labels */
@@ -1962,26 +1963,36 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     width: 5%;
   }
 
+  /* Index page title (coursename) */
   .index-title h1{
     font-variant: small-caps;
-    text-align:center;
+    text-align: center;
     margin-top: 1em;
-    margin-bottom: 1em;
-    font-weight: 200;
     font-size: 2.2em;
     color: #881c1c;
   }
 
-  =======
+  /* Index page subtitle (semester) */
+  .index-title h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #881c1c;
+    font-weight: 200;
+  }
+
   /* Size of user images */
   .rounded-circle {
     width: 10rem;
   }
 
+  /* Post titles */
   d-article h2 {
-    font-size:1em;
     font-variant: small-caps;
-    font-weight: 200;
+  }
+
+  /* Footer social media icons */
+  .footer i {
+    margin-right: 5px;
   }</style>
   <style type="text/css">
   /* base style */
@@ -2167,15 +2178,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a class="logo" href="https://dacss.github.io/dacss_course_website/">
-<img src="images/DACSS_Round_Network.png" alt="Logo"/>
+<img src="images/white-dacss-wordmark.png" alt="Logo"/>
 </a>
-<a href="index.html" class="title">DACCS 601</a>
+<a href="index.html" class="title"></a>
 </div>
 <div class="nav-right">
 <a href="about.html">About</a>
 <a href="students.html">Students</a>
 <a href="https://github.com/dacss/dacss_course_website">
 <i class="fab fa-github-alt fa-1x" aria-hidden="true"></i>
+</a>
+<a href="https://twitter.com/UMassDACSS">
+<i class="fab fa-twitter fa-1x" aria-hidden="true"></i>
+</a>
+<a href="https://www.facebook.com/UMassDACSS/?hc_ref=ARTD_zQ7HWSN2lLvmMqZ6QXNRNuyxP1Xk8PBv5HNZLL6_iiXw_ppEcVDvHLbs-VlD7c&amp;fref=nf&amp;__tn__=kC-R">
+<i class="fab fa-facebook fa-1x" aria-hidden="true"></i>
+</a>
+<a href="https://www.linkedin.com/company/umass-amherst-data-analytics-and-computational-social-science">
+<i class="fab fa-linkedin fa-1x" aria-hidden="true"></i>
+</a>
+<a href="https://www.instagram.com/umassdacss/?hl=en">
+<i class="fab fa-instagram fa-1x" aria-hidden="true"></i>
 </a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
@@ -2218,7 +2241,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p><a href="https://www.umass.edu/sbs/dacss"><img src="images/Data%20Analytics_horiz_RGB.png" alt="UMass Amherst DACSS" class="inline" width ="30%" style="background-color:white; padding: 10px;"/></a></p>
+<!-- DACSS wordmark -->
+<p><a href="https://www.umass.edu/sbs/dacss"><img src="images/white-dacss-wordmark.png" alt="UMass Amherst DACSS" class="inline" width ="30%"/></a> <!-- Social media icons --> <div class="container"> <div class="row"> <div class="col-md center"> <ul class="social-icons mb-lg"> <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer"><i class="fa fa-twitter"></i></a> <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer"><i class="fa fa-facebook"></i></a> <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer"><i class="fa fa-linkedin"></i></a> <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer"><i class="fa fa-instagram"></i></a> </ul> </div> </div> </div></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
