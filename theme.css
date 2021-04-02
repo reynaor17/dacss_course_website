@@ -61,11 +61,12 @@ d-appendix {
 /* These properties only apply to Distill sites and blogs  */
 
 .distill-site-header {
-  --title-size:       28px;
+  --title-size:       22px;
   --text-color:       rgba(255, 255, 255, 1);
   --text-size:        18px;
   --hover-color:      white;
   --bkgd-color:       #881c1c;
+  line-height: 1.15 !important;
 }
 
 .distill-site-footer {
@@ -73,8 +74,6 @@ d-appendix {
   --text-size:        15px;
   --hover-color:      white;
   --bkgd-color:       #881c1c;
-  clear: both;
-  position: relative;
 }
 
 /*-- Additional custom styles --*/
@@ -82,7 +81,7 @@ d-appendix {
 
 /* Logo sizing */
 .logo img {
-  display: none;
+  vertical-align: 0% !important;
   max-height: 40px !important; 
   width: 40px !important;
   margin-bottom: -10px !important;
@@ -98,6 +97,7 @@ d-appendix {
   font-family: 'Open Sans', sans-serif !important; 
 }
 
+<<<<<<< HEAD
 /*-- Alignment to allow floating on same line --*/
 
 /*-- index Title css --*/
@@ -114,3 +114,10 @@ d-appendix {
   padding-bottom: 1rem; 
   align: center;
 }
+=======
+/* Size of user images */
+.rounded-circle {
+  width: 10rem;
+}
+
+>>>>>>> 75543318c598803cac5302e8e23b74430de22149

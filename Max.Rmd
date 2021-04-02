@@ -16,5 +16,5 @@ output:
  
 I am a Doggie Teaching Assistant. I like hanging out and getting pets while you work on R. I work hard to maintain extreme fluffiness.
 
-#Hobbies:
+## Hobbies:
 Playing ball. Rolling in the grass. Long walks.
