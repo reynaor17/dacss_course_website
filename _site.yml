@@ -21,5 +21,7 @@ navbar:
       href: about.html
     - text: "Students"
       href: students.html
+    - icon: fab fa-github-alt fa-1x
+      href: https://github.com/dacss/dacss_course_website
   search: false
 output: distill::distill_article

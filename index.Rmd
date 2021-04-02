@@ -17,7 +17,7 @@ library(readtext)
 </p>
 </div>
 
-```{r title-page-plot, layout="l-page", eval=T, fig.width=15, fig.asp=.25}
+```{r title-page-plot, layout="l-screen-inset", eval=T, fig.width=15, fig.asp=.25}
 
 proposal<-readtext("~/Google Drive/Data Analytics program/Marketing and Student Communication/Dacss proposal.txt")
 doc.corpus<-corpus(proposal)
