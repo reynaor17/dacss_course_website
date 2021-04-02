@@ -97,27 +97,12 @@ d-appendix {
   font-family: 'Open Sans', sans-serif !important; 
 }
 
-<<<<<<< HEAD
-/*-- Alignment to allow floating on same line --*/
-
-/*-- index Title css --*/
-.index-title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 200;
-  font-size: 50px;
-  font-variant: small-caps;
-  color: #881c1c;;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  line-height: 1;
-  border-bottom: 0; /*same as default h2*/
-  padding-bottom: 1rem; 
-  align: center;
+.sidebar {
+  width: 5%;
 }
+
 =======
 /* Size of user images */
 .rounded-circle {
   width: 10rem;
 }
-
->>>>>>> 75543318c598803cac5302e8e23b74430de22149
