@@ -112,3 +112,17 @@ Once you've done that, create a new pull request.
 Add some comments on what this pull request does. For example, in mine I added a new post about the iris dataset and created my about me page. Once you're done click the `Create pull request` button.
 
 That's it! Wait for the instructor to review your pull request. They will give you feedback and if they approve your request, all your changes will be reflected on the main repo and website!
+
+## Syncing a Fork 
+
+If you notice that your repo is behing the main repo, you may want to sync up your local repo. 
+
+![behind](_guide/images/behind.png)
+
+You may manually do so by following [GitHub's official guide](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork).
+
+Or you can the run the code chunk in `sync.Rmd`. This file can be found in the root directory of your repo.
+
+![behind](_guide/images/run.png)
+
+If the following code succeeds, you have synced up with the main repo. All you need to do is commit and push any changes that you made (if you have not, then you should be good to go!).
