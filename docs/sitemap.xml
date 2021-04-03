@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>https://github.com/DACSS/dacss_course_website/about.html</loc>
-    <lastmod>2021-03-31T23:43:06-04:00</lastmod>
+    <lastmod>2021-04-02T18:42:18-04:00</lastmod>
   </url>
   <url>
     <loc>https://github.com/DACSS/dacss_course_website/</loc>
@@ -21,8 +21,8 @@
     <lastmod>2021-04-01T12:28:51-04:00</lastmod>
   </url>
   <url>
-    <loc>https://github.com/DACSS/dacss_course_website/sync.html</loc>
-    <lastmod>2021-04-03T00:28:17-04:00</lastmod>
+    <loc>https://github.com/DACSS/dacss_course_website/posts/2021-04-02-iris/</loc>
+    <lastmod>2021-04-02T19:13:20-04:00</lastmod>
   </url>
   <url>
     <loc>https://github.com/DACSS/dacss_course_website/posts/2021-03-31-homework-2/</loc>

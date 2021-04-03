@@ -7,7 +7,19 @@
     <description>This is the course website for student work from DACSS 601 offered at UMass Amherst.
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 31 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>iris</title>
+      <dc:creator>Hans Quiogue</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/2021-04-02-iris</link>
+      <description>The iris dataset</description>
+      <category>homework 3</category>
+      <category>iris</category>
+      <category>hans quiogue</category>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/2021-04-02-iris</guid>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/2021-04-02-iris/iris_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Homework 2</title>
       <dc:creator>Alex Hong</dc:creator>

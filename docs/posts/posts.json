@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2021-04-02-iris/",
+    "title": "iris",
+    "description": "The iris dataset",
+    "author": [
+      {
+        "name": "Hans Quiogue",
+        "url": {}
+      }
+    ],
+    "date": "2021-04-02",
+    "categories": [
+      "homework 3",
+      "iris",
+      "hans quiogue"
+    ],
+    "contents": "\nHere is the iris dataset\n\n\n\n\n\n\n",
+    "preview": "posts/2021-04-02-iris/iris_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2021-04-02T19:13:20-04:00",
+    "input_file": "iris.utf8.md",
+    "preview_width": 1248,
+    "preview_height": 768
+  },
+  {
     "path": "posts/2021-03-31-homework-2/",
     "title": "Homework 2",
     "description": "For the 2nd homework assignment, I reuse the Congressional dataset and plug my work into a markdown file.",
