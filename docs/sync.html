@@ -86,21 +86,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Data Analytics and Computational Social Science: Students</title>
+  <title>Data Analytics and Computational Social Science: Sync</title>
 
 
   <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Data Analytics and Computational Social Science: Students"/>
+  <meta property="og:title" content="Data Analytics and Computational Social Science: Sync"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Data Analytics and Computational Social Science"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Data Analytics and Computational Social Science: Students"/>
+  <meta property="twitter:title" content="Data Analytics and Computational Social Science: Sync"/>
   <meta property="twitter:site" content="@UMassDACSS"/>
   <meta property="twitter:creator" content="@UMassDACSS"/>
 
@@ -108,7 +108,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site"]}},"value":[{"type":"character","attributes":{},"value":["Students"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Sync"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2272,7 +2272,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Students","authors":[]}
+{"title":"Sync","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2301,7 +2301,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Students</h1>
+<h1>Sync</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2309,11 +2309,28 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<ul>
-<li>John Smith</li>
-<li>Alex Hong</li>
-<li><a href="Max.html">Max</a></li>
-</ul>
+<p>Simply run the following code below to sync up with the main repository.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Automate syncing a fork</span>
+<span class='co'># Assumes user has Git installed</span>
+<span class='co'># Guide retrieved from https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork</span>
+<span class='fu'><a href='https://rdrr.io/r/base/message.html'>message</a></span><span class='op'>(</span><span class='st'>'Adding new remote upstream repo...'</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/system.html'>system</a></span><span class='op'>(</span><span class='st'>'git remote add upstream https://github.com/DACSS/dacss_course_website.git'</span><span class='op'>)</span>
+
+<span class='fu'><a href='https://rdrr.io/r/base/message.html'>message</a></span><span class='op'>(</span><span class='st'>'Fetching latest changes from main/upstream repository.'</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/system.html'>system</a></span><span class='op'>(</span><span class='st'>'git fetch upstream'</span><span class='op'>)</span>
+
+<span class='fu'><a href='https://rdrr.io/r/base/message.html'>message</a></span><span class='op'>(</span><span class='st'>'Switching to main branch.'</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/system.html'>system</a></span><span class='op'>(</span><span class='st'>'git checkout main'</span><span class='op'>)</span>
+
+<span class='fu'><a href='https://rdrr.io/r/base/message.html'>message</a></span><span class='op'>(</span><span class='st'>'Attempting to sync forked repo with main repo..'</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/system.html'>system</a></span><span class='op'>(</span><span class='st'>'git merge upstream/main'</span><span class='op'>)</span>
+
+<span class='fu'><a href='https://rdrr.io/r/base/message.html'>message</a></span><span class='op'>(</span><span class='st'>'Success! Your local repo is synced. Please commit and push any necessary changes.'</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

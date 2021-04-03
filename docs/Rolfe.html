@@ -463,23 +463,23 @@
 
           html {
             /*-- Main font sizes --*/
-            --title-size:      45px;
+            --title-size:      2.5rem;
             --body-size:       1.06rem;
             --code-size:       14px;
             --aside-size:      12px;
             --fig-cap-size:    13px;
             /*-- Main font colors --*/
             --title-color:     #881c1c;
-            --header-color:    rgba(0, 0, 0, 0.8);
-            --body-color:      rgba(0, 0, 0, 0.8);
+            --header-color:    #63666a;
+            --body-color:      #63666a;
             --aside-color:     rgba(0, 0, 0, 0.6);
             --fig-cap-color:   rgba(0, 0, 0, 0.6);
             /*-- Specify custom fonts ~~~ must be imported above   --*/
-            --title-font:      'Open Sans', sans-serif;
+            --title-font:      'Open Sans',   sans-serif;
             --heading-font:    'Open Sans', sans-serif;
             --mono-font:       'Open Sans', sans-serif;
             --body-font:       'Open Sans', sans-serif;
-            --navbar-font:     'Lora', serif;  /* websites + blogs only */
+            --navbar-font:     'Open Sans', sans-serif;
           }
 
           /*-- ARTICLE METADATA --*/
@@ -501,7 +501,7 @@
           }
 
           .posts-with-sidebar .posts-sidebar {
-                width: 15%;
+                width: 16%;
           }
 
           /*-- ARTICLE APPENDIX --*/
@@ -516,19 +516,36 @@
           /* These properties only apply to Distill sites and blogs  */
 
           .distill-site-header {
-            --title-size:       22px;
-            --text-color:       rgba(255, 255, 255, 1);
-            --text-size:        18px;
+            --title-size: 20px;
+            --text-size: 18px;
             --hover-color:      white;
             --bkgd-color:       #881c1c;
             line-height: 1.15 !important;
           }
 
+          .distill-site-header .title {
+            padding-top:18px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            font-weight: 700;
+          }
+
           .distill-site-footer {
-            --text-color:       rgba(255, 255, 255, 0.8);
+            --text-color:       white;
             --text-size:        15px;
             --hover-color:      white;
             --bkgd-color:       #881c1c;
+          }
+
+          .footer-center {
+            grid-column-start: middle-start /  text-end;
+            grid-row: 1 / 2;
+          }
+
+          .footer-right {
+            grid-column: gutter-start / gutter-end;
+            grid-row: 1 / 2;
           }
 
           /*-- Additional custom styles --*/
@@ -537,10 +554,10 @@
           /* Logo sizing */
           .logo img {
             vertical-align: 0% !important;
-            max-height: 50px !important; 
-            /*
-            width: 40px !important;
-            margin-bottom: -10px !important;*/
+            max-height: 22px !important; 
+            padding-bottom: 4px;
+            margin-bottom: 0px;
+            padding-right: 0px;
           }
 
           /* Categories / labels */
@@ -549,46 +566,132 @@
           }
 
           /* Navbar right links */
-          .nav-right a {
-            font-family: 'Open Sans', sans-serif !important; 
-          }
 
-          /* This is an attempt to change sidebar, doesn't work */
-          .sidebar {
-            width: 5%;
+          .nav-right a{
+            font-size: 18px;
+            font-weight: 700;
+            padding-top: 20px;
           }
 
           /* Index page title (coursename) */
-          .index-title h1{
+
+          d-title h1{
+            text-align: left;
             font-variant: small-caps;
-            text-align: center;
-            margin-top: 1em;
-            font-size: 2.2em;
+            margin-top: .5rem;
+            margin-bottom: .25rem;
+            font-size: 2rem;
             color: #881c1c;
+            line-height: 1.1 !important;
+            font-weight: 200;
+          }
+
+          .index-title h1{
+            text-align: center;
+            font-variant: small-caps;
+            margin-top: .5rem;
+            margin-bottom: .25rem;
+            font-size: 2rem;
+            color: #881c1c;
+            line-height: 1.1 !important;
+            font-weight: 200;
           }
 
           /* Index page subtitle (semester) */
-          .index-title h2 {
-            text-align: center;
-            margin-bottom: 1em;
+          d-title h2 {
+            text-align:left;
+            font-variant: small-caps;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+            padding-bottom: 0rem;
             color: #881c1c;
             font-weight: 200;
+            font-size: 1.5rem;
+          }
+
+          d-article h2 {
+            text-align:left;
+            font-variant: small-caps;
+            font-weight: 200;
+            font-size: 1.5rem;
+          }
+
+          .index-title h2{
+            text-align: center;
+            font-variant: small-caps;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+            padding-bottom: 0rem;
+            color: #881c1c;
+            font-weight: 200;
+            font-size: 1.5rem;
           }
 
           /* Size of user images */
           .rounded-circle {
-            width: 10rem;
-          }
-
-          /* Post titles */
-          d-article h2 {
-            font-variant: small-caps;
+            height: unset;
+            width: unset;
+            border-radius: unset;
           }
 
           /* Footer social media icons */
           .footer i {
             margin-right: 5px;
-          }</style>
+          }
+
+          /* remove image on mobile */
+
+          .image-hide{}
+
+          @media screen and (max-width: 520px) {
+              .image-hide {
+                display: none;
+              }
+              .distill-site-header {
+                --title-size: 14px; 
+              }
+              .distill-site-header .title {
+                padding-left: 6px;
+                padding-right: 6px;
+              }
+              .d-title h1{
+                font-size: 22px;
+              }
+              .d-title h2{
+                font-size: 16px;
+              }
+              .index-title h1{
+                font-size: 22px;
+              }
+              .index-title h2{
+                font-size: 16px;
+              }
+              .d-article div {
+                margin-top:20px;
+                margin-bottom:20px;
+              }
+              .posts-list .posts-list-caption {
+                margin: 0;
+              }
+              .posts-list {
+                margin-top: 20px;
+              }
+              .posts-list .post-preview p{
+                font-size:12;
+              }
+            }
+
+          @media screen and (max-width: 360px) {
+            .distill-site-header {
+              --title-size: 12px; 
+              }
+            .distill-site-header .title {
+                padding-left: 2px;
+                padding-right: 2px;
+            }
+            }
+          */
+          </style>
           <style type="text/css">
           /* base style */
 
@@ -743,7 +846,7 @@
           .distill-site-footer a:hover {
             color: var(--hover-color, white);
           }</style>
-          <script src="/Library/Frameworks/R.framework/Versions/3.6/Resources/library/rmarkdown/rmd/h/pandoc/header-attrs.js"></script>
+          <script src="/Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmd/h/pandoc/header-attrs.js"></script>
     
     
   </head>
@@ -754,27 +857,16 @@
           <nav class="distill-site-nav distill-site-header">
           <div class="nav-left">
           <a class="logo" href="https://dacss.github.io/dacss_course_website/">
-          <img src="images/white-dacss-wordmark.png" alt="Logo"/>
+          <img src="images/UMass White Workmark Horiz.png" alt="Logo"/>
           </a>
-          <a href="index.html" class="title"></a>
+          <a href="index.html" class="title">Data Analytics and Computational Social Science</a>
           </div>
           <div class="nav-right">
           <a href="about.html">About</a>
+          <a href="about.html">Syllabus</a>
           <a href="students.html">Students</a>
           <a href="https://github.com/dacss/dacss_course_website">
           <i class="fab fa-github-alt fa-1x" aria-hidden="true"></i>
-          </a>
-          <a href="https://twitter.com/UMassDACSS">
-          <i class="fab fa-twitter fa-1x" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.facebook.com/UMassDACSS/?hc_ref=ARTD_zQ7HWSN2lLvmMqZ6QXNRNuyxP1Xk8PBv5HNZLL6_iiXw_ppEcVDvHLbs-VlD7c&amp;fref=nf&amp;__tn__=kC-R">
-          <i class="fab fa-facebook fa-1x" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/umass-amherst-data-analytics-and-computational-social-science">
-          <i class="fab fa-linkedin fa-1x" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/umassdacss/?hl=en">
-          <i class="fab fa-instagram fa-1x" aria-hidden="true"></i>
           </a>
           <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
           </div>
@@ -878,7 +970,19 @@
           <!--radix_placeholder_navigation_after_body-->
           <div class="distill-site-nav distill-site-footer">
           <!-- DACSS wordmark -->
-          <p><a href="https://www.umass.edu/sbs/dacss"><img src="images/white-dacss-wordmark.png" alt="UMass Amherst DACSS" class="inline" width ="30%"/></a> <!-- Social media icons --> <div class="container"> <div class="row"> <div class="col-md center"> <ul class="social-icons mb-lg"> <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer"><i class="fa fa-twitter"></i></a> <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer"><i class="fa fa-facebook"></i></a> <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer"><i class="fa fa-linkedin"></i></a> <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer"><i class="fa fa-instagram"></i></a> </ul> </div> </div> </div></p>
+          <div class="footer-center"><a href="https://www.umass.edu/sbs/dacss">
+            <img src="images/white-dacss-wordmark.png" 
+            alt="UMass Amherst DACSS" width ="30%"/></a>
+          </div>
+          <!-- Social media icons -->
+          <div class="footer-right">
+                  <ul class="social-icons mb-lg">
+                    <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer"><i class="fa fa-twitter"></i></a>
+                    <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer"><i class="fa fa-facebook"></i></a>
+                    <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer"><i class="fa fa-instagram"></i></a>
+                  </ul>
+          </div>
           </div>
           <!--/radix_placeholder_navigation_after_body-->
 
