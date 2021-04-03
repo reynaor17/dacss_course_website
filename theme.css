@@ -171,6 +171,7 @@ d-article h2 {
 
 /* Size of user images */
 .rounded-circle {
+  height: 15rem;
   width: 15rem;
 }
 
