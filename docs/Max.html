@@ -538,6 +538,16 @@
             --bkgd-color:       #881c1c;
           }
 
+          .footer-center {
+            grid-column-start: middle-start /  text-end;
+            grid-row: 1 / 2;
+          }
+
+          .footer-right {
+            grid-column: gutter-start / gutter-end;
+            grid-row: 1 / 2;
+          }
+
           /*-- Additional custom styles --*/
           /* Add any additional CSS rules below */
 
@@ -619,7 +629,9 @@
 
           /* Size of user images */
           .rounded-circle {
-            width: 15rem;
+            height: unset;
+            width: unset;
+            border-radius: unset;
           }
 
           /* Footer social media icons */
@@ -867,22 +879,22 @@
     <div class="container min-vh-100">
       <div class="row min-vh-100 justify-content-center align-items-center">
         <div class="col-12 text-center">
-          <img src=images/max.png style="height:10rem" class="rounded-circle">
+          <img src=images/MaxRunning.jpeg style="height:10rem" class="rounded-circle">
           <div class="mt-3">
             <h1>Max</h1>
           </div>
           <div class="row justify-content-center align-items-center">
             <div class="col-6 mt-3 text-center d-none d-sm-block">
               <p>I am a Doggie Teaching Assistant. I like hanging out and getting pets while you work on R. I work hard to maintain extreme fluffiness.</p>
-              <div id="hobbies" class="section level1">
-              <h1>Hobbies:</h1>
+              <div id="hobbies" class="section level3">
+              <h3>Hobbies:</h3>
               <p>Playing ball. Rolling in the grass. Long walks.</p>
               </div>
             </div>
             <div class="col-11 mt-3 text-center d-block d-sm-none">
               <p>I am a Doggie Teaching Assistant. I like hanging out and getting pets while you work on R. I work hard to maintain extreme fluffiness.</p>
-              <div id="hobbies" class="section level1">
-              <h1>Hobbies:</h1>
+              <div id="hobbies" class="section level3">
+              <h3>Hobbies:</h3>
               <p>Playing ball. Rolling in the grass. Long walks.</p>
               </div>
             </div>
@@ -966,7 +978,19 @@
           <!--radix_placeholder_navigation_after_body-->
           <div class="distill-site-nav distill-site-footer">
           <!-- DACSS wordmark -->
-          <p><a href="https://www.umass.edu/sbs/dacss"><img src="images/white-dacss-wordmark.png" alt="UMass Amherst DACSS" class="inline" width ="30%"/></a> <!-- Social media icons --> <div class="container"> <div class="row"> <div class="col-md center"> <ul class="social-icons mb-lg"> <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer"><i class="fa fa-twitter"></i></a> <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer"><i class="fa fa-facebook"></i></a> <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer"><i class="fa fa-linkedin"></i></a> <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer"><i class="fa fa-instagram"></i></a> </ul> </div> </div> </div></p>
+          <div class="footer-center"><a href="https://www.umass.edu/sbs/dacss">
+            <img src="images/white-dacss-wordmark.png" 
+            alt="UMass Amherst DACSS" width ="30%"/></a>
+          </div>
+          <!-- Social media icons -->
+          <div class="footer-right">
+                  <ul class="social-icons mb-lg">
+                    <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer"><i class="fa fa-twitter"></i></a>
+                    <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer"><i class="fa fa-facebook"></i></a>
+                    <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer"><i class="fa fa-instagram"></i></a>
+                  </ul>
+          </div>
           </div>
           <!--/radix_placeholder_navigation_after_body-->
 

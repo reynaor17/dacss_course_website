@@ -90,6 +90,16 @@ d-appendix {
   --bkgd-color:       #881c1c;
 }
 
+.footer-center {
+  grid-column-start: middle-start /  text-end;
+  grid-row: 1 / 2;
+}
+
+.footer-right {
+  grid-column: gutter-start / gutter-end;
+  grid-row: 1 / 2;
+}
+
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below */
 
@@ -171,8 +181,9 @@ d-article h2 {
 
 /* Size of user images */
 .rounded-circle {
-  height: 15rem;
-  width: 15rem;
+  height: unset;
+  width: unset;
+  border-radius: unset;
 }
 
 /* Footer social media icons */

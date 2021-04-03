@@ -1943,6 +1943,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --bkgd-color:       #881c1c;
   }
 
+  .footer-center {
+    grid-column-start: middle-start /  text-end;
+    grid-row: 1 / 2;
+  }
+
+  .footer-right {
+    grid-column: gutter-start / gutter-end;
+    grid-row: 1 / 2;
+  }
+
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below */
 
@@ -2024,7 +2034,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /* Size of user images */
   .rounded-circle {
-    width: 15rem;
+    height: unset;
+    width: unset;
+    border-radius: unset;
   }
 
   /* Footer social media icons */
@@ -2320,7 +2332,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
 <!-- DACSS wordmark -->
-<p><a href="https://www.umass.edu/sbs/dacss"><img src="images/white-dacss-wordmark.png" alt="UMass Amherst DACSS" class="inline" width ="30%"/></a> <!-- Social media icons --> <div class="container"> <div class="row"> <div class="col-md center"> <ul class="social-icons mb-lg"> <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer"><i class="fa fa-twitter"></i></a> <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer"><i class="fa fa-facebook"></i></a> <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer"><i class="fa fa-linkedin"></i></a> <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer"><i class="fa fa-instagram"></i></a> </ul> </div> </div> </div></p>
+<div class="footer-center"><a href="https://www.umass.edu/sbs/dacss">
+  <img src="images/white-dacss-wordmark.png" 
+  alt="UMass Amherst DACSS" width ="30%"/></a>
+</div>
+<!-- Social media icons -->
+<div class="footer-right">
+        <ul class="social-icons mb-lg">
+          <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer"><i class="fa fa-twitter"></i></a>
+          <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer"><i class="fa fa-facebook"></i></a>
+          <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer"><i class="fa fa-instagram"></i></a>
+        </ul>
+</div>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
