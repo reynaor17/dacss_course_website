@@ -7,6 +7,7 @@ output_dir: "docs"
 base_url: https://github.com/DACSS/dacss_course_website
 collections:
   posts:
+    disqus: dacss-course-github
     share: [twitter, linkedin]
 creative_commons: CC BY-NC
 twitter:
