@@ -1949,11 +1949,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     grid-row: 1 / 2;
   }
 
-  .footer-right {
-    grid-column: gutter-start / gutter-end;
-    grid-row: 1 / 2;
-  }
-
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below */
 
@@ -2041,8 +2036,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   /* Footer social media icons */
-  .footer i {
+  .social-media-icons .footer {
     margin-right: 5px;
+  }
+
+  /* 
+    Remove weird formating with footer icons in posts
+    Note: not supported for Safari browsers.
+  */
+  .fa-placeholder {
+    all: unset;
   }
 
   /* remove image on mobile */
@@ -2599,16 +2602,19 @@ reading what we have to say!</p>
 <!-- DACSS wordmark -->
 <div class="footer-center"><a href="https://www.umass.edu/sbs/dacss">
   <img src="images/white-dacss-wordmark.png" 
-  alt="UMass Amherst DACSS" width ="30%"/></a>
+  alt="UMass Amherst DACSS" width ="40%"/></a>
 </div>
 <!-- Social media icons -->
-<div class="footer-right">
-        <ul class="social-icons mb-lg">
-          <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer"><i class="fa fa-twitter"></i></a>
-          <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer"><i class="fa fa-facebook"></i></a>
-          <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer"><i class="fa fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer"><i class="fa fa-instagram"></i></a>
-        </ul>
+<div class="container">
+  <div class="col-md-4">
+    <div class="row social-media-icons">
+      <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer fa fa-twitter"></a>
+      <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer fa fa-facebook"></a>
+      <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer fa fa-instagram"></a>
+      <a class="fa fa-placeholder"></a>
+    </div>
+  </div>
 </div>
 </div>
 <!--/radix_placeholder_navigation_after_body-->

@@ -95,11 +95,6 @@ d-appendix {
   grid-row: 1 / 2;
 }
 
-.footer-right {
-  grid-column: gutter-start / gutter-end;
-  grid-row: 1 / 2;
-}
-
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below */
 
@@ -187,8 +182,16 @@ d-article h2 {
 }
 
 /* Footer social media icons */
-.footer i {
+.social-media-icons .footer {
   margin-right: 5px;
+}
+
+/* 
+  Remove weird formating with footer icons in posts
+  Note: not supported for Safari browsers.
+*/
+.fa-placeholder {
+  all: unset;
 }
 
 /* remove image on mobile */
@@ -241,6 +244,6 @@ d-article h2 {
       padding-left: 2px;
       padding-right: 2px;
   }
-  }
-*/
+}
+
 
