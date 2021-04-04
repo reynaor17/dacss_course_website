@@ -234,6 +234,9 @@ d-article h2 {
     .posts-list .post-preview p{
       font-size:12;
     }
+    #dacss-footer {
+      width: 70%;
+    }
   }
 
 @media screen and (max-width: 360px) {
@@ -243,6 +246,9 @@ d-article h2 {
   .distill-site-header .title {
       padding-left: 2px;
       padding-right: 2px;
+  }
+  #dacss-footer {
+      width: 70%;
   }
 }
 
