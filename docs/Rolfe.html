@@ -458,7 +458,7 @@
 
           /* Optional: embed custom fonts here with `@import`          */
           /* This must remain at the top of this file.                 */
-          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
           @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
           html {
@@ -475,7 +475,7 @@
             --aside-color:     rgba(0, 0, 0, 0.6);
             --fig-cap-color:   rgba(0, 0, 0, 0.6);
             /*-- Specify custom fonts ~~~ must be imported above   --*/
-            --title-font:      'Open Sans',   sans-serif;
+            --title-font:      'Open Sans', sans-serif;
             --heading-font:    'Open Sans', sans-serif;
             --mono-font:       'Open Sans', sans-serif;
             --body-font:       'Open Sans', sans-serif;
@@ -520,15 +520,6 @@
             --text-size: 18px;
             --hover-color:      white;
             --bkgd-color:       #881c1c;
-            line-height: 1.15 !important;
-          }
-
-          .distill-site-header .title {
-            padding-top:18px;
-            padding-bottom: 10px;
-            padding-left: 16px;
-            padding-right: 16px;
-            font-weight: 700;
           }
 
           .distill-site-footer {
@@ -543,19 +534,12 @@
             grid-row: 1 / 2;
           }
 
-          .footer-right {
-            grid-column: gutter-start / gutter-end;
-            grid-row: 1 / 2;
-          }
-
           /*-- Additional custom styles --*/
           /* Add any additional CSS rules below */
 
           /* Logo sizing */
           .logo img {
-            vertical-align: 0% !important;
-            max-height: 22px !important; 
-            padding-bottom: 4px;
+            padding-bottom: 3px;
             margin-bottom: 0px;
             padding-right: 0px;
           }
@@ -566,11 +550,8 @@
           }
 
           /* Navbar right links */
-
-          .nav-right a{
-            font-size: 18px;
-            font-weight: 700;
-            padding-top: 20px;
+          .nav-right a {
+            font-size: 16px;
           }
 
           /* Index page title (coursename) */
@@ -583,7 +564,7 @@
             font-size: 2rem;
             color: #881c1c;
             line-height: 1.1 !important;
-            font-weight: 200;
+            /* font-weight: 200; */
           }
 
           .index-title h1{
@@ -594,7 +575,7 @@
             font-size: 2rem;
             color: #881c1c;
             line-height: 1.1 !important;
-            font-weight: 200;
+            /* font-weight: 200; */
           }
 
           /* Index page subtitle (semester) */
@@ -635,8 +616,21 @@
           }
 
           /* Footer social media icons */
-          .footer i {
+          .social-media-icons .footer {
             margin-right: 5px;
+          }
+
+          /* 
+            Remove weird formating with footer icons in posts
+            Note: not supported for Safari browsers.
+          */
+          .fa-placeholder {
+            all: unset;
+          }
+
+          /* Align navbar button on top right side (only applies for mobile) */
+          .nav-toggle {
+            padding-top: 14px !important;
           }
 
           /* remove image on mobile */
@@ -646,6 +640,9 @@
           @media screen and (max-width: 520px) {
               .image-hide {
                 display: none;
+              }
+              .title {
+                font-size: 14px !important;
               }
               .distill-site-header {
                 --title-size: 14px; 
@@ -659,6 +656,9 @@
               }
               .d-title h2{
                 font-size: 16px;
+              }
+              .index-title {
+                margin-bottom: 30px;
               }
               .index-title h1{
                 font-size: 22px;
@@ -679,18 +679,51 @@
               .posts-list .post-preview p{
                 font-size:12;
               }
+              /* Fix padding for posts */
+              .posts-container {
+                padding-right: 0%;
+              }
+              /* DACSS footer image */
+              #dacss-footer {
+                width: 70%;
+              }
+              /* 'Student Submissions text in index */
+              .posts-list-caption {
+                font-size: 18px;
+              }
+              .nav-right a {
+                text-align: center !important;
+              }
             }
 
           @media screen and (max-width: 360px) {
+            .title {
+              font-size: 12px !important;
+            }
             .distill-site-header {
               --title-size: 12px; 
-              }
+            }
             .distill-site-header .title {
                 padding-left: 2px;
                 padding-right: 2px;
             }
+            .index-title {
+                margin-bottom: 30px;
             }
-          */
+            /* Fix padding for posts */
+            .posts-container {
+                padding-right: 0%;
+            }
+            /* DACSS footer image */
+            #dacss-footer {
+                width: 70%;
+            }
+            /* 'Student Submissions text in index */
+            .posts-list-caption {
+                font-size: 18px;
+            }
+          }
+
           </style>
           <style type="text/css">
           /* base style */
@@ -846,7 +879,7 @@
           .distill-site-footer a:hover {
             color: var(--hover-color, white);
           }</style>
-          <script src="/Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmd/h/pandoc/header-attrs.js"></script>
+          <script src="/Library/Frameworks/R.framework/Versions/3.6/Resources/library/rmarkdown/rmd/h/pandoc/header-attrs.js"></script>
     
     
   </head>
@@ -972,16 +1005,17 @@
           <!-- DACSS wordmark -->
           <div class="footer-center"><a href="https://www.umass.edu/sbs/dacss">
             <img src="images/white-dacss-wordmark.png" 
-            alt="UMass Amherst DACSS" width ="30%"/></a>
+            alt="UMass Amherst DACSS" width ="30%" id="dacss-footer"/></a>
           </div>
           <!-- Social media icons -->
-          <div class="footer-right">
-                  <ul class="social-icons mb-lg">
-                    <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer"><i class="fa fa-twitter"></i></a>
-                    <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer"><i class="fa fa-facebook"></i></a>
-                    <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer"><i class="fa fa-instagram"></i></a>
-                  </ul>
+          <div class="container">
+            <div class="social-media-icons">
+              <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer fa fa-twitter"></a>
+              <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer fa fa-facebook"></a>
+              <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer fa fa-linkedin"></a>
+              <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer fa fa-instagram"></a>
+              <a class="fa fa-placeholder"></a>
+            </div>
           </div>
           </div>
           <!--/radix_placeholder_navigation_after_body-->
