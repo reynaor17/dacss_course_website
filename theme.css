@@ -194,6 +194,11 @@ d-article h2 {
   all: unset;
 }
 
+/* Align navbar button on top right side (only applies for mobile) */
+.nav-toggle {
+  padding-top: 14px !important;
+}
+
 /* remove image on mobile */
 
 .image-hide{}
@@ -201,6 +206,9 @@ d-article h2 {
 @media screen and (max-width: 520px) {
     .image-hide {
       display: none;
+    }
+    .title {
+      font-size: 14px !important;
     }
     .distill-site-header {
       --title-size: 14px; 
@@ -249,9 +257,15 @@ d-article h2 {
     .posts-list-caption {
       font-size: 18px;
     }
+    .nav-right a {
+      text-align: center !important;
+    }
   }
 
 @media screen and (max-width: 360px) {
+  .title {
+    font-size: 12px !important;
+  }
   .distill-site-header {
     --title-size: 12px; 
   }

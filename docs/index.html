@@ -2048,6 +2048,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     all: unset;
   }
 
+  /* Align navbar button on top right side (only applies for mobile) */
+  .nav-toggle {
+    padding-top: 14px !important;
+  }
+
   /* remove image on mobile */
 
   .image-hide{}
@@ -2055,6 +2060,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   @media screen and (max-width: 520px) {
       .image-hide {
         display: none;
+      }
+      .title {
+        font-size: 14px !important;
       }
       .distill-site-header {
         --title-size: 14px; 
@@ -2103,9 +2111,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       .posts-list-caption {
         font-size: 18px;
       }
+      .nav-right a {
+        text-align: center !important;
+      }
     }
 
   @media screen and (max-width: 360px) {
+    .title {
+      font-size: 12px !important;
+    }
     .distill-site-header {
       --title-size: 12px; 
     }
@@ -2636,14 +2650,12 @@ reading what we have to say!</p>
 </div>
 <!-- Social media icons -->
 <div class="container">
-  <div class="col-md-4">
-    <div class="row social-media-icons">
-      <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer fa fa-twitter"></a>
-      <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer fa fa-facebook"></a>
-      <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer fa fa-linkedin"></a>
-      <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer fa fa-instagram"></a>
-      <a class="fa fa-placeholder"></a>
-    </div>
+  <div class="social-media-icons">
+    <a href="https://twitter.com/UMassDACSS" target="_blank" title="Twitter" class="footer fa fa-twitter"></a>
+    <a href="https://bit.ly/3cMIlIK" target="_blank" title="Facebook" class="footer fa fa-facebook"></a>
+    <a href="https://bit.ly/2PymwUp" target="_blank" title="LinkedIn" class="footer fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/umassdacss/?hl=en" target="_blank" title="Instagram" class="footer fa fa-instagram"></a>
+    <a class="fa fa-placeholder"></a>
   </div>
 </div>
 </div>
