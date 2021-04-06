@@ -3,7 +3,7 @@ title: "Homework 2"
 description: |
   For the 2nd homework assignment, I reuse the Congressional dataset and plug my work into a markdown file.
 author:
-  - name: Alex Hong
+  - name: Alexander Hong
 date: 03-31-2021
 categories:
   - homework 2
