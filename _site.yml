@@ -1,5 +1,6 @@
 name: "DACSS 601"
 title: "Data Analytics and Computational Social Science"
+favicon: "images/DACSS_Round_Network.png"
 theme: theme.css
 description: |
   This is the course website for student work from DACSS 601 offered at UMass Amherst.
