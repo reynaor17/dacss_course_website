@@ -1,21 +1,19 @@
 ---
-title: "Example"
+title: "Second Example"
 description: |
-  A short description of the post.
+  A short description of the post. Checking for conflicts.
 author: 
-  - name: Hans
-categories:
-  - example
+  - name: no_one
 date: 04-07-2021
 output:
   distill::distill_article:
     self_contained: false
 ---
 
-This is the new airplane example
 
 ```{r setup, include=FALSE}
-AP <- datasets::AirPassengers
+library(distill)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 Distill is a publication format for scientific and technical writing, native to the web.
@@ -23,6 +21,6 @@ Distill is a publication format for scientific and technical writing, native to 
 Learn more about using Distill at <https://rstudio.github.io/distill>.
 
 ```{r}
-plot(AP,xlab="Date", ylab = "Passenger numbers (1000's)",main="Air Passenger numbers from 1949 to 1961")
+AP<- datasets::AirPassengers
+boxplot(AP~cycle(AP),xlab="Date", ylab = "Passenger Numbers (1000's)" ,main ="Monthly Air Passengers Boxplot from 1949 to 1961")
 ```
-
