@@ -12,7 +12,28 @@
       <link>https://github.com/DACSS/dacss_course_website</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 05 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>HW 4: Making A Chart</title>
+      <dc:creator>Alexander Hong</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/hw-4-making-a-chart</link>
+      <description>My homework 4 creates a charts</description>
+      <category>homework 4</category>
+      <category>graph</category>
+      <category>alex hong</category>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/hw-4-making-a-chart</guid>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/hw-4-making-a-chart/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>HW 4: Weather Data</title>
+      <dc:creator>Peter Sullivan</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/sullivan-hw4</link>
+      <description>My homework 4 using weather data and contianing images.</description>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/sullivan-hw4</guid>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/sullivan-hw4/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>HW 4: Weather Data</title>
       <dc:creator>Peter Sullivan</dc:creator>
