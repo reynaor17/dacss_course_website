@@ -12,6 +12,7 @@ output:
     self_contained: false
 ---
 
+This is the new airplane example
 
 ```{r setup, include=FALSE}
 AP <- datasets::AirPassengers
