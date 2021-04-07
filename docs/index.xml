@@ -12,7 +12,17 @@
       <link>https://github.com/DACSS/dacss_course_website</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 05 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Example</title>
+      <dc:creator>John Smith</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/2021-04-07-example</link>
+      <description>A short description of the post.</description>
+      <category>example</category>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/2021-04-07-example</guid>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/2021-04-07-example/example_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>HW 4: Weather Data</title>
       <dc:creator>Peter Sullivan</dc:creator>

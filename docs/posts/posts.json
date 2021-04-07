@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/2021-04-07-example/",
+    "title": "Example",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "John Smith",
+        "url": {}
+      }
+    ],
+    "date": "2021-04-07",
+    "categories": [
+      "example"
+    ],
+    "contents": "\n\n\nplot(AP,xlab=\"Date\", ylab = \"Passenger numbers (1000's)\",main=\"Air Passenger numbers from 1949 to 1961\")\n\n\n\n\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": "posts/2021-04-07-example/example_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2021-04-07T16:20:05-04:00",
+    "input_file": "example.utf8.md",
+    "preview_width": 1248,
+    "preview_height": 768
+  },
+  {
     "path": "posts/hw-4-weather-data/",
     "title": "HW 4: Weather Data",
     "description": "My homework 4 using weather data and contianing images.",
