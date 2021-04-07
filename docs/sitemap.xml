@@ -2,6 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>https://github.com/DACSS/dacss_course_website/about.html</loc>
+<<<<<<< HEAD
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/Max.html</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/Rolfe.html</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/students.html</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/sync.html</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/posts/2021-04-07-example/</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/posts/2021-04-07-second-example/</loc>
+    <lastmod>2021-04-07T17:00:31-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/posts/hw-4-making-a-chart/</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/posts/sullivan-hw4/</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/posts/hw-4-weather-data/</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/posts/2021-04-02-iris/</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/posts/2021-03-31-homework-2/</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/posts/2021-03-25-student-first-post/</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/DACSS/dacss_course_website/posts/welcome/</loc>
+    <lastmod>2021-04-07T16:53:29-04:00</lastmod>
+=======
     <lastmod>2021-04-07T16:26:17-04:00</lastmod>
   </url>
   <url>
@@ -60,5 +119,6 @@
   <url>
     <loc>https://github.com/DACSS/dacss_course_website/posts/welcome/</loc>
     <lastmod>2021-03-31T16:33:37-04:00</lastmod>
+>>>>>>> upstream/main
   </url>
 </urlset>
