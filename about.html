@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="alternate" type="application/rss+xml" href="https://github.com/DACSS/dacss_course_website/index.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -87,7 +86,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Data Analytics and Computational Social Science: Student Submissions</title>
+  <title>Data Analytics and Computational Social Science: About this course</title>
 
 
   <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"/>
@@ -95,14 +94,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Data Analytics and Computational Social Science: Student Submissions"/>
+  <meta property="og:title" content="Data Analytics and Computational Social Science: About this course"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Data Analytics and Computational Social Science"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Data Analytics and Computational Social Science: Student Submissions"/>
+  <meta property="twitter:title" content="Data Analytics and Computational Social Science: About this course"/>
   <meta property="twitter:site" content="@UMassDACSS"/>
   <meta property="twitter:creator" content="@UMassDACSS"/>
 
@@ -110,7 +109,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Student Submissions"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site"]}},"value":[{"type":"character","attributes":{},"value":["About this course"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2302,12 +2301,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Student Submissions","authors":[]}
+{"title":"About this course","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2334,331 +2333,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Student Submissions">Student Submissions</h1>
-<a href="posts/hw-4-making-a-chart/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["homework 4","graph","alex hong"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 7, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Alexander Hong</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/hw-4-making-a-chart/distill-preview.png"/>
-</div>
-<div class="description">
-<h2>HW 4: Making A Chart</h2>
-<div class="dt-tags">
-<div class="dt-tag">homework 4</div>
-<div class="dt-tag">graph</div>
-<div class="dt-tag">alex hong</div>
-</div>
-<p>My homework 4 creates a charts</p>
-</div>
-</a>
-<a href="posts/sullivan-hw4/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 7, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Peter Sullivan</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/sullivan-hw4/distill-preview.png"/>
-</div>
-<div class="description">
-<h2>HW 4: Weather Data</h2>
-<div class="dt-tags"></div>
-<p>My homework 4 using weather data and contianing images.</p>
-</div>
-</a>
-<a href="posts/hw-4-weather-data/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 5, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Peter Sullivan</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/hw-4-weather-data/distill-preview.png"/>
-</div>
-<div class="description">
-<h2>HW 4: Weather Data</h2>
-<div class="dt-tags"></div>
-<p>My homework 4 using weather data and contianing images.</p>
-</div>
-</a>
-<a href="posts/2021-04-02-iris/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["homework 3","iris","hans quiogue"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 2, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Hans Quiogue</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-04-02-iris/iris_files/figure-html5/unnamed-chunk-1-1.png"/>
-</div>
-<div class="description">
-<h2>iris</h2>
-<div class="dt-tags">
-<div class="dt-tag">homework 3</div>
-<div class="dt-tag">iris</div>
-<div class="dt-tag">hans quiogue</div>
-</div>
-<p>The iris dataset</p>
-</div>
-</a>
-<a href="posts/2021-03-31-homework-2/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["homework 2","congress","alex hong"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 31, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Alex Hong</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Homework 2</h2>
-<div class="dt-tags">
-<div class="dt-tag">homework 2</div>
-<div class="dt-tag">congress</div>
-<div class="dt-tag">alex hong</div>
-</div>
-<p>For the 2nd homework assignment, I reuse the Congressional dataset and plug my work into a markdown file.</p>
-</div>
-</a>
-<a href="posts/2021-03-25-student-first-post/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["scatterplot"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 25, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">John Smith</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2021-03-25-student-first-post/student-first-post_files/figure-html5/unnamed-chunk-1-1.png"/>
-</div>
-<div class="description">
-<h2>Student first post</h2>
-<div class="dt-tags">
-<div class="dt-tag">scatterplot</div>
-</div>
-<p>Here is a plot I made with mtcars.</p>
-</div>
-</a>
-<a href="posts/welcome/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">March 25, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Nora Jones</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Welcome to DACCS 601</h2>
-<div class="dt-tags"></div>
-<p>Welcome to our new blog, DACCS 601. We hope you enjoy 
-reading what we have to say!</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:articles">articles</a>
-<span class="category-count">(7)</span>
-</li>
-<li>
-<a href="#category:alex_hong">alex hong</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:congress">congress</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:graph">graph</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:hans_quiogue">hans quiogue</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:homework_2">homework 2</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:homework_3">homework 3</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:homework_4">homework 4</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:iris">iris</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:scatterplot">scatterplot</a>
-<span class="category-count">(1)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Student Submissions</h1>
+<h1>About this course</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2666,14 +2343,9 @@ reading what we have to say!</p>
 
 
 <div class="d-article">
-<!-- Title -->
-<section id="dacss-601-foundations-of-data-science" class="index-title">
-<h1>DACSS 601: Foundations of Data Science</h1>
-<h2 id="spring-2021">Spring 2021</h2>
-</section>
-<div class="layout-chunk" data-layout="l-screen-inset image-hide">
-<p><img src="index_files/figure-html5/title-page-plot-1.png" width="1920" /></p>
-</div>
+<p>This is some information about DACSS and the course. Can be prefilled in with something interesting.</p>
+<h2 id="course-instructor">Course Instructor:</h2>
+<p><a href="Rolfe.html">Meredith Rolfe</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
