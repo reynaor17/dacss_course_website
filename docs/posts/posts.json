@@ -51,9 +51,9 @@
 =======
       "example"
     ],
-    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\nplot(AP,xlab=\"Date\", ylab = \"Passenger numbers (1000's)\",main=\"Air Passenger numbers from 1949 to 1961\")\n\n\n\n\n\n\n\n",
+    "contents": "\nThis is the new airplane example\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\nplot(AP,xlab=\"Date\", ylab = \"Passenger numbers (1000's)\",main=\"Air Passenger numbers from 1949 to 1961\")\n\n\n\n\n\n\n\n",
     "preview": "posts/2021-04-07-example/example_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-04-07T16:29:37-04:00",
+    "last_modified": "2021-04-07T16:53:40-04:00",
     "input_file": "example.utf8.md",
 >>>>>>> 976c1c7ec965164c03250683e324919cd8acbbd4
     "preview_width": 1248,
