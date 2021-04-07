@@ -14,6 +14,7 @@
     <generator>Distill</generator>
     <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
     <item>
+<<<<<<< HEAD
       <title>Example</title>
       <dc:creator>Hans</dc:creator>
       <link>https://github.com/DACSS/dacss_course_website/posts/2021-04-07-example</link>
@@ -36,6 +37,9 @@
     <item>
 =======
 >>>>>>> upstream/main
+=======
+<<<<<<< HEAD
+>>>>>>> upstream/main
       <title>HW 4: Making A Chart</title>
       <dc:creator>Alexander Hong</dc:creator>
       <link>https://github.com/DACSS/dacss_course_website/posts/hw-4-making-a-chart</link>
@@ -55,6 +59,16 @@
       <guid>https://github.com/DACSS/dacss_course_website/posts/sullivan-hw4</guid>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
       <media:content url="https://github.com/DACSS/dacss_course_website/posts/sullivan-hw4/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+=======
+      <title>Example</title>
+      <dc:creator>Hans</dc:creator>
+      <link>https://github.com/DACSS/dacss_course_website/posts/2021-04-07-example</link>
+      <description>A short description of the post.</description>
+      <category>example</category>
+      <guid>https://github.com/DACSS/dacss_course_website/posts/2021-04-07-example</guid>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/DACSS/dacss_course_website/posts/2021-04-07-example/example_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1248" height="768"/>
+>>>>>>> 976c1c7ec965164c03250683e324919cd8acbbd4
     </item>
     <item>
       <title>HW 4: Weather Data</title>
