@@ -3,6 +3,8 @@ title: "Welcome to DACSS 601"
 description: |
   Welcome to our new blog, DACSS 601. We hope you enjoy 
   reading what we have to say!
+categories:
+  - welcome
 author:
   - name: Nora Jones 
     url: https://example.com/norajones
